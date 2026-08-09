@@ -1,0 +1,65 @@
+image: node:22-bookworm
+
+stages:
+  - validate
+  - build
+  - deploy
+
+variables:
+  NPM_CONFIG_CACHE: "$CI_PROJECT_DIR/.npm"
+  NEXT_TELEMETRY_DISABLED: "1"
+  DEPLOY_TARGET: "gitlab"
+  GITLAB_PAGES_BASE_PATH: "/$CI_PROJECT_NAME"
+
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - .npm/
+    - node_modules/
+
+before_script:
+  - npm ci --cache .npm --prefer-offline
+
+lint:
+  stage: validate
+  script:
+    - npm run lint
+
+typecheck:
+  stage: validate
+  script:
+    - npm run typecheck
+
+build:
+  stage: build
+  needs:
+    - lint
+    - typecheck
+  script:
+    - npm run build
+    - rm -rf public
+    - mkdir -p public
+    - cp -r out/. public/
+    - touch public/.nojekyll
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+pages:
+  stage: deploy
+  needs:
+    - job: build
+      artifacts: true
+  script:
+    - echo "Deploying static site to GitLab Pages"
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
