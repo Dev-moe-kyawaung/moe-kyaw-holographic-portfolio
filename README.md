@@ -19,7 +19,7 @@ The portfolio combines:
 
 ## Live Demo
 
-- GitHub Pages: `https://username.github.io/repository-name`
+- GitHub Pages: `[https://username.github.io/repository-name](https://github.com/Dev-moe-kyawaung/moe-kyaw-holographic-portfolio)`
 - GitLab Pages: `https://username.gitlab.io/repository-name`
 
 Replace these URLs with your actual deployment URLs.
