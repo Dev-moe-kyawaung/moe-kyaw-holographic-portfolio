@@ -1,0 +1,20 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - automated
+
+  - package-ecosystem: github-actions
+    directory: /.github/workflows
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    labels:
+      - ci
+      - automated
