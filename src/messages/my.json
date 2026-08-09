@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "about": "အကြောင်း",
+    "skills": "ကျွမ်းကျင်မှု",
+    "projects": "ပရောဂျက်များ",
+    "roadmap": "လမ်းကြောင်း",
+    "assistant": "AI Assistant",
+    "contact": "ဆက်သွယ်ရန်"
+  },
+  "hero": {
+    "eyebrow": "SENIOR ANDROID DEVELOPER • FULL-STACK ENGINEER",
+    "title": "မျက်နှာပြင်ထက်ကျော်လွန်သော Digital အတွေ့အကြုံများ",
+    "description": "ခေတ်မီ Architecture၊ လှပသော UI နှင့် Production-ready Engineering များဖြင့် လုံခြုံပြီး တိုးချဲ့နိုင်သော Android System များကို တည်ဆောက်ပါသည်။",
+    "primary": "Portfolio ကိုကြည့်ရန်",
+    "secondary": "CV ဒေါင်းလုဒ်",
+    "status": "ရွေးချယ်ထားသော Collaboration များအတွက် ရရှိနိုင်ပါသည်"
+  },
+  "home": {
+    "eyebrow": "THE OMNI-SPHERE",
+    "title": "အသက်ဝင်သော System တစ်ခုကဲ့သို့ တည်ဆောက်ထားသော Portfolio",
+    "description": "Projects၊ Architecture၊ Skills၊ Experiments နှင့် အနာဂတ် Vision များကို လေ့လာနိုင်ပါသည်။"
+  },
+  "metrics": {
+    "focus": "အဓိကအာရုံစိုက်မှု",
+    "focusValue": "Android & Full-Stack",
+    "architecture": "Engineering ပုံစံ",
+    "architectureValue": "Secure & Modular",
+    "vision": "အနာဂတ်လမ်းကြောင်း",
+    "visionValue": "2026 → 2030"
+  },
+  "assistant": {
+    "title": "Portfolio ကို မေးမြန်းနိုင်ပါသည်",
+    "description": "Moe ၏ Android ကျွမ်းကျင်မှု၊ Project များ၊ Architecture နှင့် Workflow များကို လေ့လာနိုင်ပါသည်။",
+    "placeholder": "မေးခွန်းရေးပါ...",
+    "send": "ပို့ရန်",
+    "welcome": "မင်္ဂလာပါ။ Moe Kyaw ၏ Portfolio Assistant ဖြစ်ပါသည်။ Android၊ Project၊ Architecture နှင့် Collaboration များကို မေးမြန်းနိုင်ပါသည်။"
+  }
+}
