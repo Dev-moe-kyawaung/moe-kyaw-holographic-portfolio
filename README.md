@@ -83,8 +83,8 @@ Replace these URLs with your actual deployment URLs.
 Clone the repository:
 
 ```bash
-git clone https://github.com/username/repository-name.git
-cd repository-name
+git clone https://github.com/Dev-moe-kyawaung/moe-kyaw-holographic-portfolio.git
+cd oe-kyaw-holographic-portfolio
 ```
 # Install dependencies:
 ```bash
