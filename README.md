@@ -84,7 +84,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Dev-moe-kyawaung/moe-kyaw-holographic-portfolio.git
-cd oe-kyaw-holographic-portfolio
+cd moe-kyaw-holographic-portfolio
 ```
 # Install dependencies:
 ```bash
